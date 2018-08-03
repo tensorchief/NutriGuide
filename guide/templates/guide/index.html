@@ -1,0 +1,48 @@
+{% load bootstrap4 %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dumbo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% bootstrap_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'guide/css/style.css' %}">
+</head>
+<body class="bg-dark foody">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">NutriGuide</h1>
+            <p class="lead">Maximum performance with minimum effort!</p>
+        </div>
+        <div class="card-deck">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ title1 }}</h5>
+                    <p class="card-text">Weekly nutrition plan</p>
+                </div>
+            </div>
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ title2 }}</h5>
+                    <p class="card-text">Shopping list based on nutrition plan</p>
+                </div>
+            </div>
+            <div class="card text-white bg-info mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ title3 }}</h5>
+                    <p class="card-text">Nutrition goals</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer container-fluid text-right">
+            <span class="text-muted">Image source: <a href="https://hosbeg.com/10-important-tips-for-maintaining-a-healthy-lifestyle/">hosbeg.com</a></span>
+    </footer>
+
+    {% bootstrap_javascript jquery='full' %}
+</body>
+</html>

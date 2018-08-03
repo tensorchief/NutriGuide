@@ -3,8 +3,5 @@ from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("Dumbo")
+    return render(request, 'guide/index.html', {'title1': 'Weekly planning', 'title2': 'Shopping list', 'title3': 'Personal settings'})
 
-
-def hello(request):
-    return HttpResponse("World")

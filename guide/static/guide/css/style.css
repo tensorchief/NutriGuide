@@ -1,0 +1,31 @@
+body.foody {
+    background: url("https://hosbeg.com/wp-content/uploads/2018/06/maintaining-a-healthy-lifestyle.jpeg") center center;
+    background-size: cover;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.foody .jumbotron {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.foody .card.bg-danger {
+    background-color: rgba(220, 53, 69, 0.8) !important;
+}
+
+.foody .card.bg-warning {
+    background-color: rgba(255, 193, 7, 0.8) !important;
+}
+
+.foody .card.bg-info {
+    background-color: rgba(23, 162, 184, 0.8) !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+}
