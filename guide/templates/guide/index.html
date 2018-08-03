@@ -1,4 +1,5 @@
 {% load bootstrap4 %}
+{% load fontawesome %}
 {% load static %}
 
 <!DOCTYPE html>
@@ -9,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% bootstrap_css %}
+    {% fontawesome_stylesheet %}
     <link rel="stylesheet" type="text/css" href="{% static 'guide/css/style.css' %}">
 </head>
 <body class="bg-dark foody">
@@ -18,24 +20,15 @@
             <p class="lead">Maximum performance with minimum effort!</p>
         </div>
         <div class="card-deck">
-            <div class="card text-white bg-danger mb-3">
+            {% for card in cards %}
+            <div class="card text-white bg-{{ card.colour }} mb-3">
                 <div class="card-body">
-                    <h5 class="card-title">{{ title1 }}</h5>
-                    <p class="card-text">Weekly nutrition plan</p>
+                    <h5 class="card-title">{{ card.title }}</h5>
+                    <p class="card-text">{{ card.description }}</p>
+                    <p class="card-text text-center"><i class="fa {{ card.icon }} fa-5x"></i></p>
                 </div>
             </div>
-            <div class="card text-white bg-warning mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">{{ title2 }}</h5>
-                    <p class="card-text">Shopping list based on nutrition plan</p>
-                </div>
-            </div>
-            <div class="card text-white bg-info mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">{{ title3 }}</h5>
-                    <p class="card-text">Nutrition goals</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 
