@@ -1,6 +1,13 @@
-body.foody {
+.bg {
     background: url("https://hosbeg.com/wp-content/uploads/2018/06/maintaining-a-healthy-lifestyle.jpeg") center center;
     background-size: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1000;
+    filter: blur(1px);
 }
 
 html {
@@ -9,7 +16,8 @@ html {
 }
 
 .foody .jumbotron {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, .4);
+    color: #222;
 }
 
 .foody .card.bg-danger {
@@ -27,5 +35,4 @@ html {
 .footer {
     position: absolute;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.6);
 }

@@ -13,10 +13,15 @@
     {% fontawesome_stylesheet %}
     <link rel="stylesheet" type="text/css" href="{% static 'guide/css/style.css' %}">
 </head>
-<body class="bg-dark foody">
+<body class="foody">
+    <div class="bg"></div>
+    <nav class="navbar navbar-light mb-3 bg-light">
+        <a class="navbar-brand" href="#"><i class="fa fa-cookie-bite"></i>
+        </a>
+    </nav>
     <div class="container">
         <div class="jumbotron">
-            <h1 class="display-4">NutriGuide</h1>
+            <h1 class="display-4 font-weight-bold">NutriGuide</h1>
             <p class="lead">Maximum performance with minimum effort!</p>
         </div>
         <div class="card-deck">
@@ -33,7 +38,7 @@
     </div>
 
     <footer class="footer container-fluid text-right">
-            <span class="text-muted">Image source: <a href="https://hosbeg.com/10-important-tips-for-maintaining-a-healthy-lifestyle/">hosbeg.com</a></span>
+            <span class="text-light">Image source: <a class="text-light" href="https://hosbeg.com/10-important-tips-for-maintaining-a-healthy-lifestyle/">hosbeg.com</a></span>
     </footer>
 
     {% bootstrap_javascript jquery='full' %}

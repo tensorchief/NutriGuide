@@ -9,7 +9,7 @@ def index(request):
         TitleCard('Weekly planning',
                   'View weekly nutrition plan',
                   'danger',
-                  'fa-calendar-check-o'),
+                  'fa-calendar-alt'),
         TitleCard('Shopping list',
                   'Add items from nutrition plan to shopping list',
                   'warning',

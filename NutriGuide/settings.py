@@ -70,6 +70,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'NutriGuide.wsgi.application'
+FONTAWESOME_CSS_URL = 'https://use.fontawesome.com/releases/v5.2.0/css/all.css'
 
 
 # Database
