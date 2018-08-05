@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap4',
     'fontawesome',
+    'guide.apps.GuideConfig'
 ]
 
 MIDDLEWARE = [
