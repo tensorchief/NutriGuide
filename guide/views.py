@@ -1,5 +1,6 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth import logout as auth_logout
 
 from guide.models import TitleCard
 
@@ -22,3 +23,7 @@ def index(request):
     ]
     return render(request, 'guide/index.html', {'cards': cards})
 
+
+def logout(request):
+    auth_logout(request)
+    return redirect('index')
