@@ -15,6 +15,10 @@ html {
     width: 100%;
 }
 
+.foody {
+    height: 100%;
+}
+
 .foody .jumbotron {
     background-color: rgba(255, 255, 255, .4);
     color: #222;
@@ -35,4 +39,10 @@ html {
 .footer {
     position: absolute;
     bottom: 0;
+}
+
+.container.shaded {
+    background-color: rgba(255, 255, 255, .4);
+    color: #222;
+    height: calc(100% - 96px);
 }
