@@ -31,3 +31,7 @@ def logout(request):
 
 def login(request):
     return HttpResponseRedirect('/admin/login/?next=/')
+
+
+def settings(request):
+    return render(request, 'guide/settings.html')
