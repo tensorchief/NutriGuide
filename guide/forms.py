@@ -12,11 +12,13 @@ class ProfileForm(forms.ModelForm):
         widget=forms.DateInput(attrs={'type': 'date', 'class': 'form-control'})
     )
     weight = forms.DecimalField(
+        label='Weight (kg)',
         max_digits=5,
         decimal_places=2,
         widget=forms.NumberInput(attrs={'class': 'form-control'})
     )
     height = forms.DecimalField(
+        label='Height (cm)',
         max_digits=5,
         decimal_places=2,
         widget=forms.NumberInput(attrs={'class': 'form-control'})

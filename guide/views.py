@@ -35,5 +35,5 @@ def login(request):
 
 
 def settings(request):
-    form = ProfileForm()
+    form = ProfileForm(instance=request.user.profile)
     return render(request, 'guide/settings.html', {'form': form})
