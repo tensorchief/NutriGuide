@@ -57,7 +57,7 @@ ROOT_URLCONF = 'NutriGuide.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'guide/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'NutriGuide/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

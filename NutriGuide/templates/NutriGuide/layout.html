@@ -1,0 +1,27 @@
+{% load bootstrap4 %}
+{% load fontawesome %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dumbo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% bootstrap_css %}
+    {% fontawesome_stylesheet %}
+    <link rel="stylesheet" type="text/css" href="{% static 'guide/css/style.css' %}">
+</head>
+<body class="foody">
+    <div class="bg"></div>
+
+    {% include 'NutriGuide/navigation.html' %}
+    {% block content %}{% endblock %}
+
+    <footer class="footer container-fluid text-right">
+            <span class="text-light">Image source: <a class="text-light" href="https://hosbeg.com/10-important-tips-for-maintaining-a-healthy-lifestyle/">hosbeg.com</a></span>
+    </footer>
+
+    {% bootstrap_javascript jquery='full' %}
+</body>
