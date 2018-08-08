@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import logout as auth_logout
 
 from guide.models import TitleCard
+from guide.forms import ProfileForm
 
 
 def index(request):
@@ -34,4 +35,5 @@ def login(request):
 
 
 def settings(request):
-    return render(request, 'guide/settings.html')
+    form = ProfileForm()
+    return render(request, 'guide/settings.html', {'form': form})
