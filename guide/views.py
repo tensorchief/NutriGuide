@@ -35,5 +35,13 @@ def login(request):
 
 
 def settings(request):
-    form = ProfileForm(instance=request.user.profile)
+    if request.method == "POST":
+        form = ProfileForm(request.POST)
+        if form.is_valid():
+            profile = form.save(commit=False)
+            profile.user_id = request.user.id
+            profile.id = request.user.profile.id
+            profile.save()
+    else:
+        form = ProfileForm(instance=request.user.profile)
     return render(request, 'guide/settings.html', {'form': form})
